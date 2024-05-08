@@ -7,7 +7,8 @@ BaseCaching = __import__('base_caching').BaseCaching
 
 
 class BasicCache(BaseCaching):
-    """Creating a Cache Class"""
+    """Creating a Cache Class
+    """
 
     def __init__(self):
         """Class Initialization Dunder Method"""

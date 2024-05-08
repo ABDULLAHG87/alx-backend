@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Creating a Basic Cache Class inheriting from BaseCaching and is a
+"""Creating a MRU Cache Class inheriting from BaseCaching and is a
 caching system
 """
 
 BaseCaching = __import__('base_caching').BaseCaching
 
 
-class BasicCache(BaseCaching):
+class MRUCache(BaseCaching):
     """Creating a Cache Class"""
 
     def __init__(self):
