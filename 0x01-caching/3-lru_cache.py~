@@ -28,11 +28,10 @@ class MRUCache(BaseCaching):
             del self.cache_data[discard]
             print('DISCARD: {:s}'.format(discard))
 
-        def get(self, key):
-            """Method that returns the value in self.cache_data"""
-
-            if key is not None and key in self.cache_data.keys():
-                self.usedKeys.append(
-                    self.usedKeys.pop(self.usedKeys.index(keys)))
-                return self.cache_data.get(key)
-            return None
+    def get(self, key):
+        """Method that returns the value in self.cache_data"""
+        if key is not None and key in self.cache_data.keys():
+            self.usedKeys.append(
+                self.usedKeys.pop(self.usedKeys.index(key)))
+            return self.cache_data.get(key)
+        return None
